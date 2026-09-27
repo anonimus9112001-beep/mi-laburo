@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Licencia</title>
+
+    <link rel="stylesheet" href="licencias.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Solicitud de Licencia</h1>
+
+        <a href="index.html" class="volver">
+            ← Volver al inicio
+        </a>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+
+            <div class="titulo">
+                <span>📝</span>
+
+                <div>
+                    <h2>Solicitar Licencia</h2>
+                    <p>
+                        Completa correctamente todos los datos.
+                    </p>
+                </div>
+            </div>
+
+
+            <form id="formularioLicencia">
+
+                <div class="campo">
+
+                    <label>Nombre completo</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Escribe tu nombre completo"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>C.I.</label>
+
+                    <input type="text" id="ci" placeholder="Número de carnet de identidad" required>
+
+                </div>
+
+
+                <div class="fechas">
+
+                    <div class="campo">
+
+                        <label>Fecha de licencia</label>
+
+                        <input type="date" id="fechaLicencia" required>
+
+                    </div>
+
+                </div>
+
+                <div class="campo">
+
+                    <label>Motivo de la licencia</label>
+
+                    <textarea id="motivo" placeholder="Escribe el motivo de tu licencia..." required>
+                    </textarea>
+                </div>
+
+
+                <div class="campo">
+
+                    <label>Imagen de respaldo</label>
+
+                    <input type="file"  id="imagen" accept="image/*" required>
+
+                    <small>
+                        Envia una imagen que sirva como prueba.
+                    </small>
+
+                </div>
+
+
+                <img id="vistaPrevia" class="vistaPrevia">
+
+                <button type="submit" class="enviar">
+                    📤 Enviar solicitud
+                </button>
+
+
+                <a href="index.html" class="cancelar">
+                    Cancelar
+                </a>
+
+            </form>
+
+            <p id="mensaje"></p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
